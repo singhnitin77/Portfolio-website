@@ -1,0 +1,277 @@
+/* *********************  */
+/* Below 1344px (Smaller desktops) */
+/* *********************  */
+
+
+@media (max-width: 84em) {
+    .hero{
+        max-width: 120rem;
+    }
+}
+
+/* ******************** */
+/* Below 1200px (Landscape Tablets) */
+/* ******************** */
+
+@media (max-width:75em) {
+    html {
+        /* 9px/16px = 56.25 */
+        font-size: 56.25%;
+    }
+
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    
+
+    .grid-small-col-gap {
+        column-gap: 3.2rem;
+        row-gap: 6.4rem;
+    }
+
+    .grid-small-row-gap {
+        column-gap: 4.8rem;
+        row-gap:6.4rem; 
+    }
+
+    .heading-featured-in {
+        font-size: 6.2rem;
+    }
+
+    .quote-heading {
+        font-size: 7.2rem;
+    }
+
+    .hero {
+        gap: 6.4rem;
+    }
+}
+
+/* ******************** */
+/* Below 944px (Tablets) */
+/* ******************** */
+@media (max-width: 59em) {
+    html {
+        /* 8px/16px = 0.5 = 50% */
+        font-size: 50%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+
+    .hero-illustration {
+        width: 50%;
+    }
+
+    .hero-test-box {
+        text-align: center;
+
+    }
+
+    .hero-illustration-box {
+        justify-content: center;
+    }
+
+    .service-num {
+        font-size: 7.4rem;
+    }
+
+    .cta {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+
+    .btn--form {
+        margin-top: 1.2rem;
+    }
+
+    /* MOBILE NAVIGATION */
+    .btn-mobile-nav {
+        display: block;
+    }
+
+
+    .work-req {
+        display: none;
+    }
+
+    .main-nav {
+        
+        
+    background: rgba(129, 46, 148, 0.178);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 2%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s ease-in;
+
+        /* Hide navigation */
+        /* display: none; */
+
+        /* problem with display:none is that when we use this on an element we can't do no animations, transitions will not work */
+
+        /* 1) Hide it visually */
+        opacity: 0;
+
+        /* 2) Make it unaccesbile to mouse and keyboard */
+        pointer-events: none;
+
+        /* 3) Hide it from screen readers */
+        visibility: hidden;
+    }
+
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+    
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+    
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+        
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 3rem;
+        color: #fff;
+        background-color: ;
+    }
+
+}
+
+/* ******************** */
+/* Below 704px (Smaller Tablets) */
+/* ******************** */
+
+@media (max-width: 44em) {
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .review-3 {
+        /* grid-column: 1/-1; */
+        /* justify-self: center; */
+    }
+
+    .heading-services, .larger-heading {
+        margin-bottom: 4.8rem;
+    }
+}
+
+/* ******************** */
+/* Below 544px (Phones) */
+/* ******************** */
+
+@media (max-width: 34em) {
+    .grid {
+        row-gap: 4.8rem;
+    }
+
+    .hero-illustration {
+        width: 70%;
+    }
+
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .section-hero {
+        padding: 2.4rem 0 6.4rem 0;
+    }
+
+    .hero {
+        padding: 0 3.2rem;
+
+    }
+
+    .service-illustration-box:nth-child(2) {
+        grid-row: 1;
+    }
+    
+    .service-illustration-box:nth-child(6) {
+        grid-row: 5;
+    }
+
+    .service-illustration-box {
+        transform: translateY(2.4rem);
+    }
+
+    .service-illustration {
+        width: 60%;
+    }
+
+    .cta {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-text-box {
+        padding: 3.2rem;
+
+    }
+
+    .cta-img-box {
+        width: 60%;
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .about-img {
+        width: 30%;
+    }
+
+    .quote-heading {
+        font-size: 6.2rem;
+    }
+
+    .heading-featured-in {
+        font-size: 5.4rem;
+    }
+
+    .client-img {
+        width: 12.5%;
+    }
+
+    .hero-box {
+        animation: none;
+    }
+
+    .service-num {
+        font-size: 7.4rem;
+    }
+
+
+}
