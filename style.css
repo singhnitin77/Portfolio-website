@@ -525,22 +525,19 @@ body {
     width: 70%;
 }
 
-.heading-services,.larger-heading {
-    
-    display: flex;
-    justify-content: center;
+.main-heading-services {
     margin-bottom: 6.2rem;
     font-size: 6.2rem;
     font-weight: 700;
-    background-image: -webkit-linear-gradient(90deg, #f64f59, #c471ed, #12c2e9);  
-    background-image: linear-gradient(90deg, #f64f59, #c471ed, #12c2e9); 
+    background-image: -webkit-linear-gradient(45deg, #f64f59, #c471ed, #12c2e9);  
+    background-image: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     line-height: 1.2;
-
 }
+
 
 .service-num {
     font-size: 8.6rem;
@@ -567,15 +564,18 @@ body {
 
 .fa-code {
     color: #FF5ACD;
+    fill: #FF5ACD ;
 }
 
 .fa-paint-brush {
     color: #A5FECB;
+    fill: #A5FECB ;
     
 }
 
 .fa-palette {
     color: #A770EF;
+    fill: #A770EF;
 }
 
 /* Nav titles */
@@ -847,6 +847,19 @@ transition: all .3s;
 
 }
 
+.main-heading-projects {
+    margin-bottom: 6.2rem;
+    font-size: 6.2rem;
+    font-weight: 700;
+    background-image: -webkit-linear-gradient(45deg, #f64f59, #c471ed, #12c2e9);  
+    background-image: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    line-height: 1.2;
+}
+
 .project {
     border: 2px solid red;
 }
@@ -868,6 +881,8 @@ transition: all .3s;
     filter: blur(0);
     /* opacity: 1; */
 }
+
+
 
 /* **************************** */
 /* TESTIMONIAL*/
@@ -891,6 +906,19 @@ transition: all .3s;
 	backdrop-filter: blur(25px);
 	border-radius: 10px;
 
+}
+
+.main-heading-testimonial {
+    margin-bottom: 6.2rem;
+    font-size: 6.2rem;
+    font-weight: 700;
+    background-image: -webkit-linear-gradient(45deg, #f64f59, #c471ed, #12c2e9);  
+    background-image: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    line-height: 1.2;
 }
 
 .star-rating {
@@ -985,6 +1013,19 @@ transition: all .3s;
     line-height: 1.6;
     color: #fff;
 
+}
+
+.main-heading-about {
+    margin-bottom: 6.2rem;
+    font-size: 6.2rem;
+    font-weight: 700;
+    background-image: -webkit-linear-gradient(45deg, #f64f59, #c471ed, #12c2e9);  
+    background-image: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    line-height: 1.2;
 }
 
 .card {
